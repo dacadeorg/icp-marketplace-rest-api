@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "azle": "^0.16.2",
+    "decode-utf8": "^1.0.1",
+    "url-pattern": "^1.0.3"
+  },
+  "devDependencies": {
+    "@swc/core-darwin-x64": "^1.3.56",
+    "encode-utf8": "^2.0.0"
+  }
+}

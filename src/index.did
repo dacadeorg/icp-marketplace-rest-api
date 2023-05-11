@@ -1,0 +1,17 @@
+type HttpRequest = record {
+  url : text;
+  method : text;
+  body : vec nat8;
+  headers : vec record { text; text };
+  upgrade : opt bool;
+};
+type HttpResponse = record {
+  body : vec nat8;
+  headers : vec record { text; text };
+  upgrade : opt bool;
+  status_code : nat16;
+};
+service : () -> {
+  http_request : (HttpRequest) -> (HttpResponse) query;
+  http_request_update : (HttpRequest) -> (HttpResponse);
+}
